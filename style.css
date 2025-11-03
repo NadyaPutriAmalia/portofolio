@@ -398,3 +398,27 @@ footer {
   gap: 0.5rem; /* icon dan teks tidak terlalu rapat */
   padding: 1rem 1.2rem;
 }
+
+/* === FOTO PROFIL HERO - FIX SIZE === */
+.profile-placeholder {
+  background: #e8ede7;
+  border-radius: 20px;
+  height: auto; /* tidak perlu fixed tinggi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.profile-placeholder img.profile-photo {
+  width: 180px;         /* ukuran lebih proporsional */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;   /* buat foto berbentuk lingkaran */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.profile-placeholder img.profile-photo:hover {
+  transform: scale(1.05);
+}
