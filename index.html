@@ -1,236 +1,196 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nadya Putri - Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadya Putri - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
-    <!-- Animated Background --> 
-    <div class="animated-bg">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="logo">NP.</div>
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Navigation Menu -->
-    <div class="nav-menu">
-        <div class="menu-icon" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hi, Saya <span class="highlight">Nadya Putri</span></h1>
+        <p>Full Stack Developer yang passionate dalam menciptakan aplikasi web yang inovatif, efisien, dan user-friendly.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary"><i data-feather="arrow-right"></i>Lihat Proyek</a>
+          <a href="assets/Nadya Putri Amalia-resume.pdf" class="btn-secondary"><i data-feather="download"></i>Download CV</a>
         </div>
-        <ul class="menu-list" id="menuList">
-            <li><a href="#about">Tentang Saya</a></li>
-            <li><a href="#projects">Proyek</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-card">
+          <div class="profile-placeholder">
+            <i data-feather="user"></i>
+          </div>
+          <div class="profile-info">
+            <h3>Nadya Putri Amalia</h3>
+            <p class="role">Full Stack Developer</p>
+          </div>
+          <div class="social-icons">
+            <a href="https://github.com/NadyaPutriAmalia"><i data-feather="github"></i></a>
+            <a href="https://www.linkedin.com/in/nadya-putri-amalia-18736719a/"><i data-feather="linkedin"></i></a>
+            <a href="#"><i data-feather="instagram"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Nadya Putri</h1>
-            <div class="subtitle">Full Stack Developer</div>
-            <a href="mailto:nadyaputriamalia21@gmail.com" class="email">nadyaputriamalia21@gmail.com</a>
-            <a href="assets/Nadya Putri Amalia-resume.pdf" class="btn-download">📄 Download CV</a>
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">TENTANG SAYA</p>
+        <h2>Passionate Developer</h2>
+      </div>
+
+      <div class="about-content">
+        <p>
+          Saya adalah Full Stack Developer dengan pengalaman dalam mengembangkan berbagai aplikasi web untuk optimalisasi proses bisnis. 
+          Saya memiliki kemampuan yang kuat dalam frontend dan backend development, serta passionate dalam menciptakan solusi digital yang efisien dan user-friendly.
+        </p>
+        <p>
+          Dengan pengalaman di berbagai teknologi modern, saya selalu antusias untuk belajar hal baru dan menghadapi tantangan dalam pengembangan software yang kompleks.
+        </p>
+
+        <div class="skills-container">
+          <div class="skill-tag"><i data-feather="code"></i>Frontend Development</div>
+          <div class="skill-tag"><i data-feather="server"></i>Backend Development</div>
+          <div class="skill-tag"><i data-feather="database"></i>Database Design</div>
+          <div class="skill-tag"><i data-feather="link"></i>API Development</div>
+          <div class="skill-tag"><i data-feather="layout"></i>UI/UX Design</div>
+          <div class="skill-tag"><i data-feather="settings"></i>DevOps</div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">Tentang Saya</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Saya adalah seorang Full Stack Developer yang passionate dalam menciptakan aplikasi web yang inovatif dan user-friendly. Dengan pengalaman dalam berbagai teknologi modern, saya siap menghadirkan solusi digital terbaik.</p>
-                    <p>Saya selalu antusias untuk belajar teknologi baru dan menghadapi tantangan dalam pengembangan software yang kompleks.</p>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-item">Frontend Development</div>
-                    <div class="skill-item">Backend Development</div>
-                    <div class="skill-item">Database Design</div>
-                    <div class="skill-item">API Development</div>
-                    <div class="skill-item">UI/UX Design</div>
-                    <div class="skill-item">DevOps</div>
-                </div>
-            </div>
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">PORTFOLIO</p>
+        <h2>Proyek Terkini</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3><i data-feather="package"></i>Defect Management System</h3>
+          <p>Aplikasi control defect untuk mengelola dan tracking defect produksi secara real-time.</p>
+          <div class="tech-tags"><span>Bootstrap</span><span>Laravel</span><span>JavaScript</span><span>Ajax</span><span>SQL Server</span></div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Proyek</h2>
-            <div class="projects-grid">
-
-                <div class="project-card">
-                    <h3>Defect Management System</h3>
-                    <p>Aplikasi control defect untuk mengelola dan tracking defect produksi secara real-time.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Bootstrap</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">SQL Server</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Sparepart Management System</h3>
-                    <p>Aplikasi pemindahan sparepart mesin dengan tracking inventory dan history perpindahan.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Bootstrap</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">SQL Server</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Service Management System</h3>
-                    <p>Pengembangan aplikasi menu kantin dengan fitur pemesanan dan manajemen layanan.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Bootstrap</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">SQL Server</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Master Production Schedule</h3>
-                    <p>Aplikasi Production Planning Control dan Man Power untuk optimalisasi jadwal produksi.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Bootstrap</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">SQL Server</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Kirimkan.com</h3>
-                    <p>Aplikasi pengiriman barang dengan tracking real-time dan manajemen order yang efisien.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Quality Alert</h3>
-                    <p>Aplikasi approval defect bertingkat dengan sistem notifikasi dan workflow management.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Transfer Lembar Kerja</h3>
-                    <p>Aplikasi mengubah lembar kerja menjadi kode untuk digitalisasi dokumen produksi.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Monitoring Production</h3>
-                    <p>Aplikasi monitoring production harian dengan dashboard analytics dan reporting.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Tailwind</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">MySQL</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Transparant Payment</h3>
-                    <p>Aplikasi pembayaran kasir dengan sistem tracking transaksi yang transparan.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Tailwind</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">RFC</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Account Payable</h3>
-                    <p>Aplikasi pencatatan hutang dengan fitur reminder dan laporan keuangan otomatis.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Tailwind</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">RFC</span>
-                    </div>
-                </div>
-
-            </div>
+        <div class="project-card">
+          <h3><i data-feather="tool"></i>Sparepart Management System</h3>
+          <p>Aplikasi pemindahan sparepart mesin dengan tracking inventory dan history perpindahan.</p>
+          <div class="tech-tags"><span>Bootstrap</span><span>PHP</span><span>JavaScript</span><span>Ajax</span><span>SQL Server</span></div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Kontak</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>📧 Email</strong>
-                        <a href="mailto:nadyaputriamalia21@gmail.com">nadyaputriamalia21@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>📍 Lokasi</strong>
-                        Pasuruan, Indonesia
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/NadyaPutriAmalia" class="social-link" title="GitHub">GH</a>
-                        <a href="https://www.linkedin.com/in/nadya-putri-amalia-18736719a/" class="social-link" title="LinkedIn">LI</a>
-                        <a href="#" class="social-link" title="Instagram">IG</a>
-                    </div>
-                </div>
-            </div>
+        <div class="project-card">
+          <h3><i data-feather="coffee"></i>Service Management System</h3>
+          <p>Pengembangan aplikasi service mesin, kertas, dan departemen lain perusahaan dalam satu platform.</p>
+          <div class="tech-tags"><span>Bootstrap</span><span>Laravel</span><span>JavaScript</span><span>Ajax</span><span>SQL Server</span></div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>✨ © 2025 Nadya Putri</p>
+        <div class="project-card">
+          <h3><i data-feather="calendar"></i>Master Production Schedule</h3>
+          <p>Aplikasi Production Planning Control dan Main Planner untuk optimalisasi jadwal produksi.</p>
+          <div class="tech-tags"><span>Bootstrap</span><span>PHP</span><span>Laravel</span><span>Ajax</span><span>SQL Server</span></div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="project-card">
+          <h3><i data-feather="truck"></i>Kirimkan.com</h3>
+          <p>Aplikasi pengiriman barang dengan tracking real-time dan manajemen order yang efisien.</p>
+          <div class="tech-tags"><span>Vue.js</span><span>Express</span><span>MongoDB</span></div>
+        </div>
+
+        <div class="project-card">
+          <h3><i data-feather="alert-triangle"></i>Quality Alert</h3>
+          <p>Aplikasi approval defect bertingkat dengan sistem notifikasi dan workflow management.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Ajax</span><span>Python</span><span>Django</span><span>PostgreSQL</span></div>
+        </div>
+
+        <div class="project-card">
+          <h3><i data-feather="file-text"></i>Transfer Lembar Kerja</h3>
+          <p>Aplikasi mengubah lembar kerja menjadi kode untuk digitalisasi dokumen produksi.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Django</span><span>PostgreSQL</span></div>
+        </div>
+
+        <div class="project-card">
+          <h3><i data-feather="monitor"></i>Monitoring Production</h3>
+          <p>Aplikasi monitoring production harian dengan dashboard analytics dan reporting.</p>
+          <div class="tech-tags"><span>Tailwind</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>MySQL</span></div>
+        </div>
+
+        <div class="project-card">
+          <h3><i data-feather="credit-card"></i>Transparent Payment</h3>
+          <p>Aplikasi pembayaran kasir dengan sistem tracking transaksi yang transparan.</p>
+          <div class="tech-tags"><span>Tailwind</span><span>JavaScript</span><span>Python</span><span>Django</span><span>MySQL</span><span>RFC</span></div>
+        </div>
+
+        <div class="project-card">
+          <h3><i data-feather="dollar-sign"></i>Account Payable</h3>
+          <p>Aplikasi pencatatan hutang dengan fitur reminder dan laporan keuangan otomatis.</p>
+          <div class="tech-tags"><span>Tailwind</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>RFC</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">HUBUNGI SAYA</p>
+        <h2>Mari Berkolaborasi</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon"><i data-feather="mail"></i></div>
+          <h3>Email</h3>
+          <p><a href="mailto:nadyaputriamalia21@gmail.com">nadyaputriamalia21@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i data-feather="map-pin"></i></div>
+          <h3>Lokasi</h3>
+          <p>Pasuruan, Indonesia</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i data-feather="linkedin"></i></div>
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/nadya-putri-amalia-18736719a/">Nadya Putri Amalia</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Nadya Putri Amalia • Dibuat dengan <span style="color:#6b9080;">💚</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>feather.replace();</script>
 </body>
 </html>
